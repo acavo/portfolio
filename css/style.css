@@ -1,0 +1,199 @@
+/* General rules */
+span {
+  color: #CB3838;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* MOBILE VIEW */
+main{
+    display: grid;
+    width: 100%;
+}
+.parallax {
+    /* The image used */
+    background-image: url(../images/top-photo-optimized.jpg);
+
+    /* Set a specific height */
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+
+    /* Parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article h1, h2{
+    text-align: center;
+    font-family: "Cuprum";
+    color: #D5D5D5;
+}
+p{
+    font-family: "Open Sans";
+    font-size: 1.1em;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.85em;
+}
+body{
+    font-family: "Verdana";
+    background: #36383a;
+}
+input{
+    display: none;
+}
+label{
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+}
+nav{
+    max-height: 0;
+    overflow: hidden;
+}
+input:checked ~ nav{
+    max-height: 500px;
+    transition: all 1.2s;
+}
+nav ul{
+    padding-left: 0px;
+    list-style-type: none;
+    margin-bottom: auto;
+}
+nav li{
+    font-size: 2em;
+    margin-bottom: auto;
+}
+nav a{
+    text-decoration: none;
+    font-family: "Cuprum";
+    font-size: 1.1em;
+    color: white;
+    display: block;
+    padding: 5px;
+    width: 100vw;
+    margin-bottom: auto;
+}
+nav a:hover {
+    color: #CB3838;
+    transition: all 1s;
+}
+nav a:active {
+    background-color: #1C1B1C;
+}
+#bubblehead {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    max-width: 40vh;
+    border-radius: 50%;
+}
+#portfolio .boxy {
+  padding: 0px;
+}
+#portfolio .boxy img {
+  max-height: 150px;
+  margin: 0px;
+  width: 100%;
+}
+/* TABLET VIEW */
+@media all and (min-width: 30em){
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section {
+      grid-column: 1/-1;
+      width: 100%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+      font-size: 2.3em;
+      margin-top: 2.2em;
+    }
+    nav {
+      position: fixed;
+      overflow: hidden;
+      background-color: #36383a;
+      top: 0;
+        max-height: 4em;
+        text-align: center;
+        width: 100%;
+        grid-column: 1/-1;
+    }
+    nav a {
+        width: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    nav ul {
+        width: 100%;
+        display: inline-block;
+    }
+    nav li {
+        display: inline-block;
+        font-size: 1.3em;
+    }
+    label {
+        display: none;
+    }
+    .parallax {
+        min-height: 300px;
+        grid-column: 1/-1;
+    }
+    .boxy {
+        grid-column: 1/-2;
+        padding-left: 50px;
+        min-height: 100vh;
+    }
+    #bubblehead {
+        grid-column: -2/-1;
+        margin-top: 5em;
+    }
+    #menu {
+        display: block;
+    }
+    #portfolio .boxy {
+      margin: auto;
+      width: 100%;
+    }
+    #portfolio .boxy img {
+      max-height: 250px;
+      margin: 10px;
+      width: auto;
+    }
+    #websites1 {
+      text-align: center;
+      margin-top: 5em;
+    }
+    #websites2 {
+      text-align: center;
+    }
+}
+/* DESKTOP VIEW */
+@media all and (min-width: 60em){
+    .parallax{
+        min-height: 450px;
+    }
+    nav{
+      position: fixed;
+      overflow: hidden;
+      background-color: #36383a;
+      top: 0;
+        max-height: 6em;
+        text-align: center;
+        width: 100%;
+        grid-column: 1/-1;
+    }
+    nav li {
+      font-size: 2em;
+    }
+}
