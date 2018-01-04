@@ -2,9 +2,23 @@
 span {
   color: #CB3838;
 }
+footer p {
+  font-size: 1em;
+}
+a, u {
+  text-decoration: none;
+}
 body {
   margin: 0;
   padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+
+}
+div.boxy{
+  padding-right: 50px;
 }
 /* MOBILE VIEW */
 main{
@@ -26,7 +40,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-article h1, h2{
+article h1, h2, h3{
     text-align: center;
     font-family: "Cuprum";
     color: #D5D5D5;
@@ -119,6 +133,9 @@ nav a:active {
       font-size: 2.3em;
       margin-top: 2.2em;
     }
+    h3 {
+      font-size: 1.6em;
+    }
     nav {
       position: fixed;
       overflow: hidden;
@@ -172,7 +189,7 @@ nav a:active {
     }
     #websites1 {
       text-align: center;
-      margin-top: 5em;
+      margin-top: 4em;
     }
     #websites2 {
       text-align: center;
@@ -195,5 +212,9 @@ nav a:active {
     }
     nav li {
       font-size: 2em;
+    }
+    p{
+      font-size: 1.6em;
+      text-align: center;
     }
 }
