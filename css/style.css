@@ -17,9 +17,6 @@ p{
   padding: 0;
 
 }
-div.boxy{
-  padding-right: 50px;
-}
 
 /* MOBILE VIEW */
 main{
@@ -129,6 +126,9 @@ nav a:active {
   margin: 0px;
   width: 100%;
 }
+.boxy p {
+  text-align: center;
+}
 
 
 /* ///////////////////  TRYING HOVERCARDS  /////////////*/
@@ -169,6 +169,7 @@ nav a:active {
 .post-s p {
   color: white;
   font-size: 1.5em;
+  font-family: "Open Sans";
 }
 /* TABLET VIEW */
 @media all and (min-width: 30em){
@@ -221,7 +222,6 @@ nav a:active {
     }
     .boxy {
         grid-column: 1/-2;
-        padding-left: 50px;
         min-height: 100vh;
     }
     #bubblehead {
@@ -274,5 +274,14 @@ nav a:active {
     }
     h1 {
         font-size: 4em;
+    }
+    .post-s p {
+      color: white;
+      font-size: 1.5em;
+      font-family: "Open Sans";
+    }
+    .boxy p {
+      margin-left: 60px;
+      margin-right: 60px;
     }
 }
