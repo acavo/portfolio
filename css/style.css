@@ -17,6 +17,13 @@ p{
   padding: 0;
 
 }
+.links {
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+  font-size: 1.3em;
+  text-align: left;
+}
 
 /* MOBILE VIEW */
 main{
