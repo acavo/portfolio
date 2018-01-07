@@ -20,14 +20,18 @@ p{
 div.boxy{
   padding-right: 50px;
 }
+
 /* MOBILE VIEW */
 main{
     display: grid;
     width: 100%;
 }
+.post-s {
+  max-height: 135px;
+}
 .parallax {
     /* The image used */
-    background-image: url(../images/top-photo-optimized-v2.jpg);
+    background-image: url(../images/header-v2.jpg);
 
     /* Set a specific height */
     min-height: 100px;
@@ -40,6 +44,11 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1 {
+  text-align: center;
+  font-family: "Cuprum";
+  color: #D5D5D5;
+}
 article h1, h2, h3{
     text-align: center;
     font-family: "Cuprum";
@@ -49,6 +58,9 @@ p{
     font-family: "Open Sans";
     font-size: 1.1em;
     color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 footer{
     text-align: center;
@@ -117,6 +129,47 @@ nav a:active {
   margin: 0px;
   width: 100%;
 }
+
+
+/* ///////////////////  TRYING HOVERCARDS  /////////////*/
+
+
+.post {
+    max-width: 833px;
+    max-height: 250px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+.post:hover .post-s {
+    width: 833px;
+}
+.post img {
+    max-width: 833px;
+    max-height: 250px;
+}
+.post-s {
+    width: 0px;
+    height: 250px;
+    background: rgba(191,25,61,0.72);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+.post-s h2 {
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+}
+.post-s p {
+  color: white;
+  font-size: 1.5em;
+}
 /* TABLET VIEW */
 @media all and (min-width: 30em){
     main {
@@ -184,7 +237,6 @@ nav a:active {
     }
     #portfolio .boxy img {
       max-height: 250px;
-      margin: 10px;
       width: auto;
     }
     #websites1 {
@@ -193,6 +245,9 @@ nav a:active {
     }
     .snapshots {
       text-align: center;
+    }
+    .post-s {
+      max-height: 250px;
     }
 }
 /* DESKTOP VIEW */
@@ -216,5 +271,8 @@ nav a:active {
     p{
       font-size: 1.6em;
       text-align: center;
+    }
+    h1 {
+        font-size: 4em;
     }
 }
